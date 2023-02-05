@@ -21,7 +21,7 @@ export default function Privacy() {
                     as well as the methods of usage and distribution of user data. In addition, we use several data protection methods and protocols to comply with 
                     data protection laws such as the GDPR and CCPA. </p>
                 <h2 className={`text-lg font-bold pt-5 pb-2`}>What Data Do We Collect?</h2>
-                <p>Shoutouts collects various types of user data in order to provide users access to the application's services. The user data we collect includes
+                <p>Shoutouts collects various types of user data in order to provide users access to our services. The user data we collect includes
                     Personal Data, or data that can be used to identify a natural person, whether directly and indirectly. For example, your email address, IP addresses, 
                     and device identifiers are all examples of Personal Data.
                 </p>
@@ -90,7 +90,7 @@ export default function Privacy() {
                         </td>
                     </tr>
                 </table>
-                <h2 className={`text-lg font-bold pt-5 pb-2`}>Policy Regarding Children's Personal Data</h2>
+                <h2 className={`text-lg font-bold pt-5 pb-2`}>Policy Regarding the Personal Data of Children</h2>
                 <p>
                     Our app is not intended for use by children under the age of 13. If you find that we have collected the Personal Data of a child,
                     please contact us through email with the details of the user account in question.

@@ -12,17 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${open_sans.variable} font-sans h-screen flex flex-col justify-evenly`}>
-        <div className={`flex justify-start items-center flex-row`}>
-          <div className={`flex-1 p-5`}>
-            <h1 className={`text-3xl font-bold`}>Shoutouts</h1>
-          </div>
-          <div className={`flex flex-row justify-end items-center flex-3 text-gray-600 p-5`}>
-          <h1 className={`p-3`}>Help</h1>
-            <h1 className={`p-3`}>Contact Us</h1>
-            <h1 className={`p-3`}>Terms</h1>
-            <h1 className={`p-3`}>Privacy Policy</h1>
-          </div>
-        </div>
         <div className={`flex-1 bg-zinc-900 flex flex-grow text-white flex-col w-full`}>
           <h1 className={`text-9xl pl-10 p-10`}>Shoutouts</h1>
           <h2 className={`text-2xl pl-10 pr-10 pb-10`}>Send a shoutout to your friends, coworkers, and community.<br/>
@@ -31,6 +20,15 @@ export default function Home() {
             onClick={() => {document.location.href='https://testflight.apple.com/join/eLr6tD84'}}>
               <h1 className={`text-3xl`}>Join Shoutouts Open Beta</h1>
           </button>
+        </div>
+
+        <div className={`flex justify-start items-center flex-row`}>
+          <div className={`flex flex-row justify-start items-center text-gray-600 p-5`}>
+          <h1 className={`p-3`}>Help</h1>
+            <h1 className={`p-3`}>Contact Us</h1>
+            <h1 className={`p-3`}>Terms</h1>
+            <h1 className={`p-3`}>Privacy Policy</h1>
+          </div>
         </div>
       </main>
     </>

@@ -12,7 +12,7 @@ export default function Privacy() {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     try {
       event.preventDefault();
-      const SERVER_URL = 'http://127.0.0.1:8000/sim/';
+      const SERVER_URL = 'https://yee-algorithm-0cdd2a896c6e.herokuapp.com/sim/';
       const formData = new FormData(event.currentTarget)
       const simD = document.getElementById('simD');
 
@@ -63,7 +63,7 @@ export default function Privacy() {
         <title>Info</title>
         <meta name="description" content="Open source EM field simulation software" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <main className={`${open_sans.variable} font-sans flex flex-col justify-evenly`}>
         <div className={`flex items-center justify-evenly flex-row`}>

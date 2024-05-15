@@ -8,9 +8,9 @@ export default function Home() {
     <>
       <Head>
         <title>Yee's Algorithm</title>
-        <meta name="description" content="Send a shoutout to your friends, coworkers, and community. Build strong communities and positive workplace culture by spreading gratitude." />
+        {/* <meta name="description" content="Send a shoutout to your friends, coworkers, and community. Build strong communities and positive workplace culture by spreading gratitude." /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <main className={`${open_sans.variable} font-sans flex flex-col h-screen justify-evenly`}>
         <div className={`flex items-center justify-evenly flex-row`}>

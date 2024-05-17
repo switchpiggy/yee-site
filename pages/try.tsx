@@ -13,6 +13,7 @@ export default function Privacy() {
     try {
       event.preventDefault();
       const SERVER_URL = 'https://yee-algorithm-0cdd2a896c6e.herokuapp.com/sim/';
+      // const SERVER_URL = 'http://127.0.0.1:8000/sim/'
       const formData = new FormData(event.currentTarget)
       const simD = document.getElementById('simD');
 
@@ -26,7 +27,7 @@ export default function Privacy() {
       });
       var json = JSON.stringify(data_obj);
 
-      simD.innerHTML = "<h2 className={`text-xl text-white`}>Loading...</h1>"
+      simD.innerHTML = "<h2>Loading...</h2>"
 
       await fetch(SERVER_URL, {
         method: 'POST',
@@ -37,7 +38,7 @@ export default function Privacy() {
           console.log(response.status)
           simD.innerHTML = "<p>Internal Server Error: Please try again.</p>"
           return 
-        }
+        }   
 
       // console.log(imageStr)
       let image = new Image();
@@ -120,8 +121,8 @@ export default function Privacy() {
             Results (GIF will appear below)
           </h1>
         </div>
-        <div id="simD" className={`bg-zinc-900 pb-10 pl-10 justify-center`}>
-          <p className={`text-xl text-zinc-300`}>Click run to generate a simulation gif</p>
+        <div id="simD" className={`bg-zinc-900 pb-10 pl-10 justify-center text-white`}>
+          <p className={`text-xl text-white`}>Click run to generate a simulation gif</p>
         </div>
       </main>
     </>

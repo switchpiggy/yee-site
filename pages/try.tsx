@@ -85,7 +85,8 @@ export default function Privacy() {
         </div>
         <div className={`flex-1 bg-zinc-900 flex flex-grow text-white flex-col w-full`}>
             <h1 className={`text-4xl p-10`}>Showcasing the Potential of FDTD</h1>
-            <p className={'text-xl pl-10'}>Here explanation!</p>
+            <p className={'text-xl pl-10'}>The system chosen for showcasing the algorithm is of a Ricker wavelet propagating in free space, which is a waveform similar to a Gaussian. Try it yourself and see; the wave spreads out in free space in a manner that is consistent with theoretical calculations. The wave source is placed in the center of the 3D grid, from which the EM wave then spreads throughout space at the speed of light. For more info, click 
+            <Link href={'/info'} className={`text-zinc-500`}> here.</Link></p>
             <form id="config-form" className={'flex p-10 m-10 bg-zinc-300 flex-col'} onSubmit={onSubmit}>
               <h2 className={`text-black text-4xl pb-5`}>Configuration</h2>
               <div className={`flex flex-1 text-black justify-evenly`}>
